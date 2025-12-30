@@ -29,7 +29,7 @@ You are responsible for any damage.
 
 ## Why GSI?
 - No device-specific ROMs available yet
-- Kernel 6.1 provides good compatibility
+- Kernel 6.1.128 should be good for testing
 - We need to test how well they work on this device
 ---
 
@@ -39,7 +39,8 @@ You are responsible for any damage.
 - Files placed in the same folder:
   - `vbmeta.img`
   - `system.img`
-  - *(optional)* `product_gsi.img`
+  - *(optional)* `product_gsi.img` https://t.me/MalmoUpdates/16
+  - BreezeUI *(GSI Image)* You can use whatever you want https://t.me/CottonCloudFiles/3/3067?single
 
 ---
 
