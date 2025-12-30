@@ -1,10 +1,7 @@
-# Flash-GSI-Guide-for-Motorola-G85-5G
-This guide is an attempt to flash GSIs on the Moto G85. Bugs are expected, but it's a guide for those who want to experiment with flashing ports or something similar, such as Oxygen OS, MIUI, Hyper, TrebleDroid, etc. Expect Issues
-
 # Moto G85 – GSI Flashing Guide
 
 This guide explains how to flash Generic System Images (GSI) on the **Moto G85**
-using **fastboot / fastbootd**.
+using **fastboot / fastbootd** expect issues on it, this is just testing if you want to try it out.
 
 Tested with:
 Android 16, not QPR1
