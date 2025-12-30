@@ -16,10 +16,16 @@ You are responsible for any damage.
 ---
 
 ## Device Information
-- Device: Moto G85
-- Architecture: arm64
+- Device: Moto G85 5G
+- Board: Malmo
+- System Platform: Blair/QCOM
+- Architecture: ARM64-Only
 - Dynamic partitions: Yes
-- Kernel: 6.1.128 by Moto
+- Kernel: 6.1.128 GKI
+- SOC: SM6375
+- FOD: Jiiov_fp or Goodex_fp
+- Released with Android 14, Updated to Android 15, Next OS: Android 16
+- NFC/ESIM: Some models has NFC and ESIM **(Don't Expect ESIM to be working on GSIs)**
 - Flashing method: fastboot / fastbootd
 
 ---
