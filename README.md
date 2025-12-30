@@ -46,43 +46,43 @@ You are responsible for any damage.
 ## 🔧 Flashing Steps
 
 ### 1️⃣ Disable AVB verification (REQUIRED)
-```bash
-fastboot --disable-verification flash vbmeta vbmeta.img```
+bash
+fastboot --disable-verification flash vbmeta vbmeta.img
 
 ## • Reboot to fastbootd:
-```bash
+bash
 fastboot reboot fastboot```
 
 
 ## • Wipe the system partition (Recommended)
-```bash
+bash
 fastboot erase system```
 
 
 ## • Flash product (OPTIONAL)
-```bash
+bash
 fastboot flash product product_gsi.img```
 
 
 ## • !! DO this if only appears "Not enough space"
-```bash
+bash
 fastboot delete-logical-partition system_a
 fastboot create-logical-partition system_a 1
 fastboot resize-logical-partition system_a 4500000000```
 
 
 ## • flash the GSI
-```bash
+bash
 fastboot flash system name/path.img```
 
 
 ## • (Wipe Data, Is obligatory, use whatever of this two)
-```bash
+bash
 fastboot -w
 or
 fastboot erase userdata```
 
 
 ## • Reboot
-```bash
+bash
 fastboot reboot```
