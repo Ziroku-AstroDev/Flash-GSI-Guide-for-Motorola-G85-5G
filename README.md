@@ -1,5 +1,5 @@
 # Flash-GSI-Guide-for-Motorola-G85-5G
-This guide is an attempt to flash GSIs on the Moto G85. Bugs are expected, but it's a guide for those who want to experiment with flashing ports or something similar, such as Oxygen OS, MIUI, Hyper, etc. Expect Issues
+This guide is an attempt to flash GSIs on the Moto G85. Bugs are expected, but it's a guide for those who want to experiment with flashing ports or something similar, such as Oxygen OS, MIUI, Hyper, TrebleDroid, etc. Expect Issues
 
 # Moto G85 – GSI Flashing Guide
 
@@ -45,44 +45,40 @@ You are responsible for any damage.
 
 ## 🔧 Flashing Steps
 
-### 1️⃣ Disable AVB verification (REQUIRED)
-bash
+### • Disable AVB verification (REQUIRED)
 fastboot --disable-verification flash vbmeta vbmeta.img
 
-## • Reboot to fastbootd:
-bash
-fastboot reboot fastboot```
+### • Reboot to fastbootd:
+```fastboot reboot fastboot```
 
 
-## • Wipe the system partition (Recommended)
-bash
-fastboot erase system```
+### • Wipe the system partition (Recommended)
+```fastboot erase system```
 
 
-## • Flash product (OPTIONAL)
-bash
-fastboot flash product product_gsi.img```
+### • Flash product (OPTIONAL)
+```fastboot flash product product_gsi.img```
 
 
-## • !! DO this if only appears "Not enough space"
-bash
-fastboot delete-logical-partition system_a
-fastboot create-logical-partition system_a 1
-fastboot resize-logical-partition system_a 4500000000```
+### • !! DO this if only appears "Not enough space"
+```fastboot delete-logical-partition system_a```
+
+```fastboot create-logical-partition system_a 1```
+
+```fastboot resize-logical-partition system_a 4500000000```
 
 
-## • flash the GSI
-bash
-fastboot flash system name/path.img```
+### • flash the GSI
+```fastboot flash system name/path.img```
 
 
-## • (Wipe Data, Is obligatory, use whatever of this two)
-bash
-fastboot -w
+### • (Wipe Data, Is obligatory, use whatever of this two)
+```fastboot -w```
 or
-fastboot erase userdata```
+```fastboot erase userdata```
 
 
-## • Reboot
-bash
-fastboot reboot```
+### • Reboot
+```fastboot reboot```
+
+# Good look! ☘️
