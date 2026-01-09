@@ -50,7 +50,7 @@ You are responsible for any damage.
 ## 🔧 Flashing Steps
 
 ### • Disable AVB verification (REQUIRED)
-fastboot --disable-verification flash vbmeta vbmeta.img
+```fastboot --disable-verification flash vbmeta vbmeta.img```
 
 ### • Reboot to fastbootd:
 ```fastboot reboot fastboot```
